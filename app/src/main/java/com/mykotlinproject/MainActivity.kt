@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private val todoList = ArrayList<String>()
-    private var todoAdapter = TodoAdapter(null)
+    private var todoAdapter = TodoAdapter(ArrayList())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun addTodo(todoName: String){
-       todoAdapter.addTodo(todoName)
+    private fun addTodo(todoName: String) {
+        todoAdapter.addTodo(todoName)
     }
 
 }
