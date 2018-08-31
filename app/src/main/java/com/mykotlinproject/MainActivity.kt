@@ -10,8 +10,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val todoList = ArrayList<String>()
-    var todoAdapter = TodoAdapter(null)
+    private val todoList = ArrayList<String>()
+    private var todoAdapter = TodoAdapter(null)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,21 +21,7 @@ class MainActivity : AppCompatActivity() {
 
 
         todoList.add("Test")
-        todoList.add("Test")
-        todoList.add("Testos")
-        todoList.add("Test")
-        todoList.add("Testos")
-        todoList.add("Test")
-        todoList.add("Testos")
-        todoList.add("Test")
-        todoList.add("Testos")
-        todoList.add("Test")
-        todoList.add("Testos")
-        todoList.add("Test")
-        todoList.add("Testos")
-        todoList.add("Test")
-        todoList.add("Testos")
-        todoList.add("Testos")
+        todoList.add("Test2")
 
         todoAdapter = TodoAdapter(todoList)
 
