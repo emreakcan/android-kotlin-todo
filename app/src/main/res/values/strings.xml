@@ -2,4 +2,6 @@
     <string name="app_name">MyKotlinProject</string>
     <string name="todos">TODOS</string>
     <string name="done">Done</string>
+    <string name="add">Add</string>
+    <string name="pay_the_bills">Pay the bills</string>
 </resources>
